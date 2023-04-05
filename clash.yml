@@ -97,16 +97,12 @@ proxy-groups:
   type: select
   use:
     - local
-    - airports
-    - aggregator
 
 - name: auto
   type: url-test
   #filter: "🏁"
   use:
     - local
-    - airports
-    - aggregator
 
 proxy-providers:
 
