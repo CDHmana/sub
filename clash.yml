@@ -1,19 +1,3 @@
-                          ## COUNTRY: IRAN ##
-## IMPORTANT: Import the appropriate config URL for your country of residence;-
-# e.g. "provider-meta-cn.yml" if in China, instead of manually adjusting it,-
-# to ensure bypassing local services while still receiving updates for the config!
-## 重要提示：为您居住的国家/地区导入适当的配置 URL；例如 “provider-meta-cn.yml”-
-# 如果在中国而不是手动调整它，以确保绕过本地服务同时仍然接收配置更新！ （谷歌翻译）
-
-          ## In case of modifications, read comments carefully! ##
-
-## For Clash.Meta -- Possible to use with Clash Premium but not tested.
-## Android client:
-## Preferable: Universal APK with new-version discovery if F-Droid store is installed:
-# https://f-droid.org/en/packages/com.github.metacubex.clash.meta:
-## Arch-specific builds, manual discovery and update, but faster newer releases:
-# https://github.com/MetaCubeX/ClashMetaForAndroid/releases:
-## Other clients: https://docs.metacubex.one/used
 
 mixed-port: 7890
 allow-lan: true
@@ -33,16 +17,6 @@ external-controller: 127.0.0.1:9090
 profile:
   store-selected: false ## It's better to default to "auto" every time it restarts.
   store-fake-ip: true
-
-#tun:
-  #enable: true
-  #stack: system ## system/lwip/gvisor
-  #dns-hijack:
-    #- 0.0.0.0:53
-  #auto-detect-interface: true
-  #auto-route: true
-  #mtu: 9000
-  #strict_route: true
 
 dns:
   enable: true
@@ -127,11 +101,8 @@ rule-providers:
     interval: 604800
 
 rules:
-  #- GEOSITE,category-ads-all,REJECT ## Rejects advertisements.
-  #- GEOSITE,win-spy,REJECT ## Rejects MS Windows analytics and spying.
   - GEOIP,private,DIRECT,no-resolve ## Loopback and LAN IPs
   - GEOIP,IR,DIRECT ## Check "provider-meta-cn.yml" for China's config.
-  #- GEOSITE,category-ir,DIRECT ## Check "provider-meta-cn.yml" for China's config.
   - RULE-SET,applications,DIRECT ## P2P software e.g. BitTorrent.
   - DOMAIN,yacd.metacubex.one,DIRECT ## Yet Another Clash Dashbord for Clash.Meta
   - DOMAIN,clash.metacubex.one,DIRECT ## Razord
