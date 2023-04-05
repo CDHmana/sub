@@ -79,7 +79,7 @@ proxy-groups:
 
 proxy-providers:
 
-local:
+  local:
     type: http
     url: "https://raw.githubusercontent.com/CDHmana/sub/main/clash2.yml"
     interval: 86400
