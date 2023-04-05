@@ -112,7 +112,7 @@ proxy-providers:
 
   local:
     type: http
-    url: "https://raw.githubusercontent.com/CDHmana/sub/main/clash.yml"
+    url: "https://raw.githubusercontent.com/CDHmana/sub/main/clash2.yml"
     interval: 86400
     path: ./providers/local.yaml ## << Put your custom servers here. Clash.Meta also accepts ss://, vmess://, trojan:// and other URLs.
     health-check:
