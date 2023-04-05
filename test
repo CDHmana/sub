@@ -63,7 +63,7 @@ proxy-groups:
 - name: global
   type: select
   proxies:
-    - auto`
+    - auto
     - manual
 
 - name: manual
