@@ -156,10 +156,10 @@ rule-providers:
 
 rules:
   #- GEOSITE,category-ads-all,REJECT ## Rejects advertisements.
-  - GEOSITE,win-spy,REJECT ## Rejects MS Windows analytics and spying.
+  #- GEOSITE,win-spy,REJECT ## Rejects MS Windows analytics and spying.
   - GEOIP,private,DIRECT,no-resolve ## Loopback and LAN IPs
   - GEOIP,IR,DIRECT ## Check "provider-meta-cn.yml" for China's config.
-  - GEOSITE,category-ir,DIRECT ## Check "provider-meta-cn.yml" for China's config.
+  #- GEOSITE,category-ir,DIRECT ## Check "provider-meta-cn.yml" for China's config.
   - RULE-SET,applications,DIRECT ## P2P software e.g. BitTorrent.
   - DOMAIN,yacd.metacubex.one,DIRECT ## Yet Another Clash Dashbord for Clash.Meta
   - DOMAIN,clash.metacubex.one,DIRECT ## Razord
